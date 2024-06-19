@@ -1,6 +1,7 @@
 
 import 'package:candlesticks/candlesticks.dart';
 import 'package:flutter/material.dart';
+import 'package:my_candle_sticks/model/candles_model.dart';
 
 class MyCandleSticksView extends StatefulWidget {
   const MyCandleSticksView({super.key});
@@ -10,9 +11,7 @@ class MyCandleSticksView extends StatefulWidget {
 }
 
 class _MyCandleSticksViewState extends State<MyCandleSticksView> {
-  List<Candle> candles =[
 
-  ];
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
