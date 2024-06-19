@@ -23,7 +23,7 @@ class _MyCandleSticksViewState extends State<MyCandleSticksView> {
             height: 400,
             width: double.infinity,
             child: Candlesticks(
-              key: Key(),
+              key: Key("symbols"),
               candles: candles,
               actions: [
                 ToolBarAction(width: 60,child: Padding(
@@ -31,7 +31,24 @@ class _MyCandleSticksViewState extends State<MyCandleSticksView> {
                 child: Text("calculando..."),
               ), onPressed: (){
 
-              })],
+              }),
+
+              ToolBarAction(width: 60,child: Padding(
+                padding: EdgeInsets.only(left: 2),
+                child: Text("calculando... 2"),
+              ), onPressed: (){ 
+
+              }),
+
+
+              ToolBarAction(width: 60,child: Padding(
+                padding: EdgeInsets.only(left: 2),
+                child: Text("calculando... 3"),
+              ), onPressed: (){
+
+              }),
+              
+              ],
               ),
           )
         ],
