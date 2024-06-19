@@ -10,6 +10,9 @@ class MyCandleSticksView extends StatefulWidget {
 }
 
 class _MyCandleSticksViewState extends State<MyCandleSticksView> {
+  List<Candle> candles =[
+
+  ];
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -21,7 +24,15 @@ class _MyCandleSticksViewState extends State<MyCandleSticksView> {
             width: double.infinity,
             child: Candlesticks(
               key: Key(),
-              candles: candles),
+              candles: candles,
+              actions: [
+                ToolBarAction(width: 60,child: Padding(
+                padding: EdgeInsets.only(left: 2),
+                child: Text("calculando..."),
+              ), onPressed: (){
+
+              })],
+              ),
           )
         ],
       ),
